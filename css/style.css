@@ -186,7 +186,22 @@ button .arrow-left {
     top: 50%;
     left: 50%;
     background: #fff;
-    color: #555;
+    color: #222;
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    transition: .3s linear;
+    transform: translate(-50%,-50%);
+}
+
+#introduce {
+    min-width: 300px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* background: #fff; */
+    color: #fff;
     z-index: 50;
     margin: 0;
     padding: 0;
@@ -225,12 +240,12 @@ button .arrow-left {
 }
 
 #loader{
-    width: 400px;
+    width: 50%;
     height: 30px;
     background: #fff;
     border: 2px solid #673AB7;
     position:absolute;
-    left: 37%;
+    left: 25%;
     top: 70%;
     /* transform: translate(-50%,-50%); */
 }
@@ -387,15 +402,8 @@ input[type=checkbox] {
     100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
   }
 
-  #introduce {
-    position: absolute;
-    top: 5vh;
-    left: 25vw;
-    text-align: center;
-    width: 50%;
-  }
 
   #introduce .ulcer {
-      width: 100%;
+      width: 80%;
       transition: 0.5s linear;
   }
