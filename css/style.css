@@ -185,13 +185,13 @@ button .arrow-left {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background: #fff;
     color: #555;
     z-index: 50;
     margin: 0;
     padding: 0;
     transition: .3s linear;
+    transform: translate(-50%,-50%);
 }
 
 #startMenu li, #optionsMenu li{
@@ -213,7 +213,7 @@ button .arrow-left {
 
 
 
-#startMenu, #optionsMenu, #statScreen{
+#startMenu, #optionsMenu, #statScreen, #welcome, #introduce{
     opacity:0;
 }
 
@@ -232,7 +232,7 @@ button .arrow-left {
     position:absolute;
     left: 37%;
     top: 70%;
-    transform = "translate(-50%,-50%)";
+    /* transform: translate(-50%,-50%); */
 }
 
 #progress{
@@ -311,3 +311,91 @@ input[type=checkbox] {
 .checkbox input[type=checkbox]:checked + label {
 	left: 43px;
 }
+
+#welcome, #introduce {
+    padding: 15vh 0;
+    transition: 1s linear;
+    /* transform: translate(-50%,-50%); */
+}
+
+.urgo-large {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    0% { -webkit-transform: rotate(0deg) }
+    25% {-webkit-transform: rotate(10deg)}
+    50% {-webkit-transform:rotate(0deg); }
+    75% {-webkit-transform:rotate(-10deg);}
+    100% {-webkit-transform:rotate(0deg);}
+ }
+@-webkit-keyframes spin { 
+    0% { -moz-transform: rotate(0deg) }
+    25% {-moz-transform: rotate(10deg)}
+    50% {-moz-transform:rotate(0deg); }
+    75% {-moz-transform:rotate(-10deg);}
+    100% {-moz-transform:rotate(0deg);}
+ }
+@keyframes spin { 
+    0% { transform: rotate(0deg) }
+    25% {transform: rotate(10deg)}
+    50% {transform:rotate(0deg); }
+    75% {transform:rotate(-10deg);}
+    100% {transform:rotate(0deg);}
+}
+
+.sparkle-text {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-moz-keyframes glowing {
+    0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-o-keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+
+  #introduce {
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+    text-align: center;
+    width: 50%;
+  }
+
+  #introduce .ulcer {
+      width: 100%;
+      transition: 0.5s linear;
+  }
