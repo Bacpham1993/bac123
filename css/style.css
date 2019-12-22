@@ -105,7 +105,22 @@ body > div{
     left: 10px;
     bottom: 0px;
 }
-button{
+#startPanel {
+    min-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    color: #222;
+    z-index: 50;
+    margin: 0;
+    transition: .3s linear;
+    transform: translate(-50%,-50%);
+}
+
+
+#gamepad button{
     font-family: 'Work Sans', sans-serif;
     display: inline-block;
     border: 0;
@@ -196,9 +211,9 @@ button .arrow-left {
 
 #introduce {
     min-width: 300px;
-    height: 450px;
+    height: auto;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     /* background: #fff; */
     color: #fff;
@@ -228,7 +243,7 @@ button .arrow-left {
 
 
 
-#startMenu, #optionsMenu, #statScreen, #welcome, #introduce{
+#startMenu, #optionsMenu, #statScreen, #welcome, #introduce, #startPanel{
     opacity:0;
 }
 
