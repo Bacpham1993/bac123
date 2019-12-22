@@ -105,7 +105,7 @@ body > div{
     left: 10px;
     bottom: 0px;
 }
-#startPanel {
+#startPanel, #restartPanel {
     min-width: 300px;
     height: auto;
     position: absolute;

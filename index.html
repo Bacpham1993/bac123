@@ -89,11 +89,17 @@
     <div id="gameScreen">
         <div id="points">0</div>
         <div id="lifes"><i class="fa fa-heart"></i><span id="lifes_p"></span></div>
-        <div id="restart">
+        <div class="card text-center" id="restartPanel">
+            <div class="card-body">
+                <h5 class="card-title">Bạn có muốn chơi lại ?</h5>
+                <button id="reload" class="btn btn-danger" role="button">Chơi lại</button>
+            </div>
+        </div>
+        <!-- <div id="restart">
             <ul>
                 <li id="reload">Chơi lại</li>
             </ul>
-        </div>
+        </div> -->
         <canvas id="gameCanvas"></canvas>
         <div id="shooter-btn">
             <i class="fa fa-superpowers" aria-hidden="true"></i>
